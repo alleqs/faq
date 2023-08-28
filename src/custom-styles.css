@@ -1,0 +1,28 @@
+a {
+   color: blue;
+   text-decoration: underline;
+}
+
+blockquote {
+   border-left-width: 4px;
+   border-color: #d1d5db;
+   padding: 16px;
+   /* margin-left: 16px; */
+   margin-top: 16px;
+   margin-bottom: 16px;
+   color: #525252;
+}
+
+ol {
+   list-style-type: decimal;
+   list-style-position: inside;
+}
+
+ul {
+   list-style-type: disc;
+   list-style-position: inside;
+}
+
+dialog::backdrop {
+   backdrop-filter: blur(2px);
+}
