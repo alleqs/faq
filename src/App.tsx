@@ -58,7 +58,7 @@ const OuterFAQ: FC<{ topico: string, faqs: FAQ[] }> = ({ topico, faqs }) => {
     <div className="py-5">
       <details className="group/topic">
         <summary className=" flex justify-between items-center font-semibold cursor-pointer ">
-          <span className='text-neutral-800 uppercase text-xl sm:text-2xl group-open/topic:text-green-900'>{topico}</span>
+          <span className='text-neutral-800 select-none uppercase text-xl sm:text-2xl group-open/topic:text-green-900'>{topico}</span>
           <span>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path className='group-open/topic:opacity-100' strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 12H6" />
