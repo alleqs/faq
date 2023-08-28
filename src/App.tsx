@@ -11,13 +11,13 @@ export const App: FC<Props> = ({ faqMap, pdf }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <main className='max-w-screen-xl sm:w-[720px] mx-auto bg-white min-h-screen'>
+    <main className='max-w-screen-xl mx-auto bg-white min-h-screen'>
       <NavBar pdf={pdf} />
       <section className="flex flex-col items-center">
         <p className="text-neutral-700 font-bold text-3xl mt-14 tracking-tight select-none">
           Perguntas Frequentes
         </p>
-        <div className='w-[576px] divide-y divide-neutral-200 mt-14'>
+        <div className='w-11/12 sm:w-[576px] divide-y divide-neutral-200 mt-14'>
           {Object.entries(faqMap).map(([topico, faqs], i) =>
             <OuterFAQ key={i} topico={topico} faqs={faqs} />
           )}
@@ -58,7 +58,7 @@ const OuterFAQ: FC<{ topico: string, faqs: FAQ[] }> = ({ topico, faqs }) => {
     <div className="py-5">
       <details className="group/topic">
         <summary className=" flex justify-between items-center font-semibold cursor-pointer ">
-          <span className='text-neutral-800 select-none uppercase text-2xl group-open/topic:text-green-900'>{topico}</span>
+          <span className='text-neutral-800 select-none uppercase text-xl sm:text-2xl group-open/topic:text-green-900'>{topico}</span>
           <span>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path className='group-open/topic:opacity-100' strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 12H6" />
