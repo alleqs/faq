@@ -14,7 +14,7 @@ export const App: FC<Props> = ({ faqMap, pdf }) => {
     <main className='max-w-screen-xl mx-auto bg-white min-h-screen'>
       <NavBar pdf={pdf} />
       <section className="flex flex-col items-center">
-        <p className="text-neutral-700 font-bold text-3xl mt-14 tracking-tight select-none">
+        <p className="text-neutral-700 font-bold text-3xl mt-14 tracking-tight">
           Perguntas Frequentes
         </p>
         <div className='w-11/12 sm:w-[720px] divide-y divide-neutral-200 mt-14'>
@@ -38,7 +38,7 @@ const InnerFAQ: FC<FAQ> = ({ P, R }) => {
     <div className="py-5">
       <details className="group">
         <summary className="flex justify-between items-center font-medium cursor-pointer">
-          <span className='select-none text-neutral-800 group-open:text-green-600'>{P}</span>
+          <span className='text-neutral-800 group-open:text-green-600'>{P}</span>
           <span className="transition group-open:rotate-180">
             <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
             </svg>
@@ -58,7 +58,7 @@ const OuterFAQ: FC<{ topico: string, faqs: FAQ[] }> = ({ topico, faqs }) => {
     <div className="py-5">
       <details className="group/topic">
         <summary className=" flex justify-between items-center font-semibold cursor-pointer ">
-          <span className='text-neutral-800 select-none uppercase text-xl sm:text-2xl group-open/topic:text-green-900'>{topico}</span>
+          <span className='text-neutral-800 uppercase text-xl sm:text-2xl group-open/topic:text-green-900'>{topico}</span>
           <span>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path className='group-open/topic:opacity-100' strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 12H6" />

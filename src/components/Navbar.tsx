@@ -14,7 +14,7 @@ export const NavBar: FC<{ pdf: Blob }> = ({ pdf }) => {
 
    return (
       <div className='max-w-screen-md mx-auto flex justify-between py-2 px-4 '>
-         <a href="http://www.sefaz.am.gov.br/" className="no-underline flex items-center select-none">
+         <a href="http://www.sefaz.am.gov.br/" className="no-underline flex items-center">
             <img src="marca-governo2019.png" className="h-8 mr-3" alt="SEFAZ/AM Logo" />
          </a>
          <div className="flex">
