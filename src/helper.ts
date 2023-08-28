@@ -15,8 +15,8 @@ export function getFaqMap(topicos: string[]): FaqMap {
       } else if (fstChar === "#") { //É pergunta
          const [pergunta, ...rest] = block.split('\n');
          faqMap[topico].push({
-            P: pergunta.substring(1).trim(),
-            R: marked.parse(rest.join('\n'))
+            perg: pergunta.substring(1).trim(),
+            resp: marked.parse(rest.join('\n'))
          });
       }
    }

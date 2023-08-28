@@ -1,4 +1,4 @@
-import { type FC, useRef } from 'react'
+import { type FC, useRef } from 'react';
 
 export const NavBar: FC<{ pdf: Blob }> = ({ pdf }) => {
 
