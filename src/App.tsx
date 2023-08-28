@@ -14,9 +14,9 @@ export const App: FC<Props> = ({ faqMap, pdf }) => {
     <main className='max-w-screen-xl mx-auto bg-white min-h-screen'>
       <NavBar pdf={pdf} />
       <section className="flex flex-col items-center">
-        <p className="text-neutral-700 font-bold text-3xl mt-14 tracking-tight">
+        <h1 className="text-neutral-700 font-bold text-3xl mt-14 tracking-tight">
           Perguntas Frequentes
-        </p>
+        </h1>
         <div className='w-11/12 sm:w-[720px] divide-y divide-neutral-200 mt-14'>
           {Object.entries(faqMap).map(([topico, faqs], i) =>
             <OuterFAQ key={i} topico={topico} faqs={faqs} />
