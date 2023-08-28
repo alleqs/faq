@@ -111,5 +111,5 @@ I - o montante do próprio imposto, constituindo o respectivo destaque do seu va
 Matematicamente:
 <br>
 
-![[(1 - aliq. interestadual) / (1 - aliq. interna)] x (aliq. interna - aliq. interestadual)](formula.png)
+![[(1 - aliq. interestadual) / (1 - aliq. interna)] x (aliq. interna - aliq. interestadual)](./public/formula.png)
 <br>
