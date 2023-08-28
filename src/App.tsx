@@ -17,7 +17,7 @@ export const App: FC<Props> = ({ faqMap, pdf }) => {
         <p className="text-neutral-700 font-bold text-3xl mt-14 tracking-tight select-none">
           Perguntas Frequentes
         </p>
-        <div className='w-11/12 sm:w-[576px] divide-y divide-neutral-200 mt-14'>
+        <div className='w-11/12 sm:w-[720px] divide-y divide-neutral-200 mt-14'>
           {Object.entries(faqMap).map(([topico, faqs], i) =>
             <OuterFAQ key={i} topico={topico} faqs={faqs} />
           )}
