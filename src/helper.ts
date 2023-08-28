@@ -11,7 +11,7 @@ export function getFaqMap(topicos: string[]): FaqMap {
       //É tópico 
       if (fstChar === " ") {
          topico = block.trim();
-         faqMap[topico] = []
+         faqMap[topico] = [];
       } else if (fstChar === "#") { //É pergunta
          const [pergunta, ...rest] = block.split('\n');
          faqMap[topico].push({
