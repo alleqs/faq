@@ -11,7 +11,7 @@ export const App: FC<Props> = ({ faqMap, pdf }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <main className='w-[720px] mx-auto bg-white min-h-screen'>
+    <main className='max-w-screen-xl sm:w-[720px] mx-auto bg-white min-h-screen'>
       <NavBar pdf={pdf} />
       <section className="flex flex-col items-center">
         <p className="text-neutral-700 font-bold text-3xl mt-14 tracking-tight select-none">
