@@ -21,7 +21,7 @@ export const App: FC<Props> = ({ faqMap, pdf }) => {
           {Object.entries(faqMap).map(([topico, faqs], i) =>
             <OuterFAQ key={i} topico={topico} faqs={faqs} />
           )}
-          <div className='flex justify-end pt-6 '>
+          <div className='flex justify-end py-6 '>
             <button onClick={() => setOpenModal(true)} className='text-gray-600 hover:text-gray-900 '>Não encontrou o que procurava?</button>
           </div>
         </div>
